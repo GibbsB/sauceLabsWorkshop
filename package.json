@@ -18,7 +18,8 @@
     "webdriver": "^5.18.7"
   },
   "scripts": {
-    "test": "./node_modules/.bin/wdio wdio.conf.js"
+    "test": "./node_modules/.bin/wdio wdio.conf.js",
+    "test-spec": "npm run test -- --spec $1"
   },
   "repository": {
     "type": "git",

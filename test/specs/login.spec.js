@@ -1,7 +1,6 @@
-const assert = require('assert');
 const put = require('../pages/login.page.js');
 
-describe('login', function () {
+describe('login -- Brandon Gibbons', function () {
     beforeEach(() => {
         browser.url('/');
     });
