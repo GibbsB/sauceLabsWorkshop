@@ -70,22 +70,22 @@ exports.config = {
             platformName: 'Windows 10',
             ...sauceOptions
         },
-        {
-            browserName: 'Safari',
-            platformName: 'iOS',
-            platformVersion: '12.2',
-            deviceName: 'iPhone X Simulator',
-            deviceOrientation: 'portrait',
-            appiumVersion: '1.13.0',
-            sendKeyStrategy: 'setValue'
-        },
-        {
-            browserName: 'Chrome',
-            platformName: 'Android',
-            platformVersion: '9.0',
-            deviceName: 'Android GoogleAPI Emulator',
-            deviceOrientation: 'portrait'
-        }
+        // {
+        //     browserName: 'Safari',
+        //     platformName: 'iOS',
+        //     platformVersion: '12.2',
+        //     deviceName: 'iPhone X Simulator',
+        //     deviceOrientation: 'portrait',
+        //     appiumVersion: '1.13.0',
+        //     sendKeyStrategy: 'setValue'
+        // },
+        // {
+        //     browserName: 'Chrome',
+        //     platformName: 'Android',
+        //     platformVersion: '9.0',
+        //     deviceName: 'Android GoogleAPI Emulator',
+        //     deviceOrientation: 'portrait'
+        // }
     // {
     //     browserName: 'firefox',
     //     browserVersion: 'latest',
@@ -289,4 +289,4 @@ exports.config = {
     */
     //onReload: function(oldSessionId, newSessionId) {
     //}
-}
+};

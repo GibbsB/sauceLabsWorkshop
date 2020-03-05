@@ -1,29 +1,29 @@
 class LoginPage {
-    static get usernameElem() {
+    get usernameElem() {
         return $('#user-name');
     }
 
-    static get passwordElem() {
+    get passwordElem() {
         return $('#password');
     }
 
-    static get loginButtonElem() {
+    get loginButtonElem() {
         return $('input[type=submit]');
     }
 
-    static get errorMessageElem() {
-        return $('h3[data-test=error');
+    get errorMessageElem() {
+        return $('h3[data-test=error]');
     }
 
-    static open() {
+    open() {
         browser.url('/');
     }
 
-    static isErrorMessagePresent() {
+    isErrorMessagePresent() {
         return LoginPage.errorMessageElem.isDisplayed();
     }
 
-    static loginWithStandardUser() {
+    loginWithStandardUser() {
         LoginPage.usernameElem.addValue("standard_user");
         LoginPage.passwordElem.addValue("secret_sauce");
         LoginPage.loginButtonElem.click();
