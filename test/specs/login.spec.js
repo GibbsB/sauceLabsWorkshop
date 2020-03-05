@@ -10,4 +10,14 @@ describe('Login -- Brandon Gibbons', () => {
         put.loginWithStandardUser();
         expect(browser.getUrl()).to.include('/inventory.html');
     });
+
+    it('should throw error to login with an invalid user', function () {
+        put.loginWithBadUser();
+        expect(put.isErrorMessagePresent()).to.equal(true);
+    });
+
+    it('should throw error to login with an invalid password', function () {
+        put.loginWithBadPassword();
+        expect(put.isErrorMessagePresent()).to.equal(true);
+    });
 });
