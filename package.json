@@ -12,11 +12,13 @@
     "@wdio/spec-reporter": "^5.18.7",
     "@wdio/sync": "^5.18.7",
     "chai": "^4.2.0",
+    "chromedriver": "^80.0.1",
     "g": "^2.0.1",
-    "wdio-chromedriver-service": "^5.0.2"
+    "wdio-chromedriver-service": "^5.0.2",
+    "webdriver": "^5.18.7"
   },
   "scripts": {
-    "test": "wdio wdio.conf.js"
+    "test": "./node_modules/.bin/wdio wdio.conf.js"
   },
   "repository": {
     "type": "git",
