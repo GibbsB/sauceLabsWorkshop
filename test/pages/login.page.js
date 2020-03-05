@@ -20,13 +20,25 @@ class LoginPage {
     }
 
     isErrorMessagePresent() {
-        return LoginPage.errorMessageElem.isDisplayed();
+        return this.errorMessageElem.isDisplayed();
     }
 
     loginWithStandardUser() {
-        LoginPage.usernameElem.addValue("standard_user");
-        LoginPage.passwordElem.addValue("secret_sauce");
-        LoginPage.loginButtonElem.click();
+        this.usernameElem.addValue("standard_user");
+        this.passwordElem.addValue("secret_sauce");
+        this.loginButtonElem.click();
+    }
+
+    loginWithBadUser() {
+        this.usernameElem.addValue('badUser');
+        this.passwordElem.addValue("secret_sauce");
+        this.loginButtonElem.click();
+    }
+
+    loginWithBadPassword() {
+        this.usernameElem.addValue('standard_user');
+        this.passwordElem.addValue("badPassword");
+        this.loginButtonElem.click();
     }
 }
 

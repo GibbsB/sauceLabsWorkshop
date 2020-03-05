@@ -1,7 +1,9 @@
 {
   "name": "saucedemo-webdriverio",
   "version": "1.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "mocha": "^7.1.0"
+  },
   "description": "Sauce Demo Automation Suite",
   "main": "index.js",
   "devDependencies": {
