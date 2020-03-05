@@ -1,0 +1,27 @@
+{
+  "name": "saucedemo-webdriverio",
+  "version": "1.0.0",
+  "dependencies": {},
+  "description": "Sauce Demo Automation Suite",
+  "main": "index.js",
+  "devDependencies": {
+    "@wdio/cli": "^5.18.7",
+    "@wdio/local-runner": "^5.18.7",
+    "@wdio/mocha-framework": "^5.18.7",
+    "@wdio/sauce-service": "^5.16.10",
+    "@wdio/spec-reporter": "^5.18.7",
+    "@wdio/sync": "^5.18.7",
+    "chai": "^4.2.0",
+    "g": "^2.0.1",
+    "wdio-chromedriver-service": "^5.0.2"
+  },
+  "scripts": {
+    "test": "wdio wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com"
+  },
+  "author": "Brandon Gibbons",
+  "license": "ISC"
+}
