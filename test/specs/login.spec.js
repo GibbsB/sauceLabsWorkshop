@@ -11,12 +11,12 @@ describe('Login -- Brandon Gibbons', () => {
         expect(browser.getUrl()).to.include('/inventory.html');
     });
 
-    it('should throw error to login with an invalid user', function () {
+    it('should throw error to login with an invalid user', () => {
         put.loginWithBadUser();
         expect(put.isErrorMessagePresent()).to.equal(true);
     });
 
-    it('should throw error to login with an invalid password', function () {
+    it('should throw error to login with an invalid password', () => {
         put.loginWithBadPassword();
         expect(put.isErrorMessagePresent()).to.equal(true);
     });
