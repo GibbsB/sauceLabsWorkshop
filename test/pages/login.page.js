@@ -16,7 +16,7 @@ class LoginPage {
   }
 
   open() {
-    browser.url("/");
+    browser.url("/"); // sends you to the baseUrl
   }
 
   isErrorMessagePresent() {
